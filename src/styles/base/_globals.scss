@@ -1,0 +1,87 @@
+/* ============ Globals ============ */
+@import "./settings";
+@import "./functions";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: pxToRem(48);
+  margin: $m-box-size 0;
+}
+
+h2 {
+  font-size: pxToRem(18);
+  margin: pxToRem(48) 0;
+}
+
+h3 {
+  font-size: pxToRem(16);
+  margin: $s-box-size 0;
+}
+
+h4 {
+  font-size: pxToRem(14);
+  margin: pxToRem(8) 0;
+}
+
+p {
+  font-size: $xs-text-size;
+  margin: $s-box-size 0;
+}
+
+/* ============= Media Queries ============== */
+@media screen and (min-width: pxToRem(480)) {
+  h1 {
+    margin: pxToRem(28) 0;
+  }
+
+  h2 {
+    font-size: pxToRem(22);
+    margin: $m-box-size 0;
+  }
+
+  h3 {
+    font-size: pxToRem(18);
+    margin: pxToRem(12) 0;
+  }
+
+  p {
+    font-size: $xs-text-size;
+    margin: pxToRem(12) 0;
+  }
+}
+
+@media screen and (min-width: pxToRem(1024)) {
+  h1 {
+    margin: pxToRem(20) 0;
+  }
+
+  h2 {
+    font-size: $l-text-size;
+    margin: pxToRem(18) 0;
+  }
+
+  h3 {
+    font-size: pxToRem(24);
+    margin: $m-box-size 0;
+  }
+
+  p {
+    font-size: $m-text-size;
+    margin: $m-box-size 0;
+  }
+}

@@ -1,0 +1,7 @@
+.header {
+  @include verticalFlex(center, center);
+}
+.is-active {
+  font-weight: bold;
+  color: $veryLightBlue;
+}
