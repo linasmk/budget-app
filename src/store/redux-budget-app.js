@@ -179,18 +179,11 @@ const expenseTwo = store.dispatch(
     createdAt: -1000,
   })
 );
-// store.dispatch(removeExpense({ id: expenseOne.expense.id }));
-// store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
-//store.dispatch(setTextFilter("ffe"));
-// store.dispatch(sortByAmount());
-// store.dispatch(sortByDate());
-// store.dispatch(setStartDate(125));
-// store.dispatch(setStartDate());
-// store.dispatch(setEndDate(1250));
-
-// const user = {
-//   name: "Jen",
-//   age: 24,
-// };
-
-// cl({ nickname: "MIcket", ...user, city: "Kaunas" });
+store.dispatch(removeExpense({ id: expenseOne.expense.id }));
+store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
+store.dispatch(setTextFilter("ffe"));
+store.dispatch(sortByAmount());
+store.dispatch(sortByDate());
+store.dispatch(setStartDate(125));
+store.dispatch(setStartDate());
+store.dispatch(setEndDate(1250));

@@ -13,7 +13,7 @@ import {
   setStartDate,
   setEndDate,
 } from "./actions/filters";
-
+import { cl } from "./utils/DebugHelpers";
 /* ===== Styles and Components ===== */
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
@@ -25,21 +25,19 @@ store.dispatch(
   addExpense({
     description: "Water Bill",
     amount: 5000,
-    createdAt: 10000,
   })
 );
 store.dispatch(
   addExpense({
     description: "Gas Bill",
     amount: 10000,
-    createdAt: 15000,
+    createdAt: 100,
   })
 );
 store.dispatch(
   addExpense({
     description: "Rent",
     amount: 1095,
-    createdAt: 1000,
   })
 );
 
