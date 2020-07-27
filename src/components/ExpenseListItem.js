@@ -1,7 +1,8 @@
+/* ========= App Dependencies ============= */
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { cl } from "../utils/DebugHelpers";
+/* ========= Code ============= */
 
 const ExpenseListItem = ({ id, description, amount, createdAt }) => (
   <section>
@@ -13,11 +14,5 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => (
     </p>
   </section>
 );
-
-// const mapStateToProps = (state) => {
-//   return {
-//     expenses: state.expenses,
-//   };
-// };
 
 export default ExpenseListItem;

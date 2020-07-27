@@ -1,7 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
+/* ========== Redux ========== */
 import getVisibleExpenses from "../selectors/expenses";
+/* ========== Components ========== */
 import ExpenseListItem from "./ExpenseListItem";
+
+/* ========== Code ========== */
 
 const ExpenseList = (props) => (
   <div>

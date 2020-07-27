@@ -1,8 +1,8 @@
+/* ========= Dependencies ============= */
+import moment from "moment";
 /* =================================================
 =========== Get Visible Expenses ================
 ================================================= */
-import moment from "moment";
-// Get visible expenses
 export default (expenses, { text, sortBy, startDate, endDate }) => {
   return expenses
     .filter((expense) => {

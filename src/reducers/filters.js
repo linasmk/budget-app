@@ -1,8 +1,8 @@
+/* ========= Dependencies ============= */
+import moment from "moment";
 /* =================================================
 =========== Filters Reducer ================
 ================================================= */
-import moment from "moment";
-//Filters Reducer
 const filtersReducerDefaultState = {
   text: "",
   sortBy: "amount",
