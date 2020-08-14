@@ -7,12 +7,15 @@ import ExpenseListItem from "./ExpenseListItem";
 
 /* ========== Code ========== */
 
-const ExpenseList = (props) => (
+export const ExpenseList = (props) => (
   <div>
-    <h1>Expense List</h1>
-    {props.expenses.map((expense) => {
-      return <ExpenseListItem key={expense.id} {...expense} />;
-    })}
+    {props.expenses.length === 0 ? (
+      <h3>You currently have no expenses!</h3>
+    ) : (
+      props.expenses.map((expense) => {
+        return <ExpenseListItem key={expense.id} {...expense} />;
+      })
+    )}
   </div>
 );
 

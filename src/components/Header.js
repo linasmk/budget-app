@@ -1,6 +1,8 @@
+/* ===== App Dependencies ===== */
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+/* ========== Code ========== */
 const Header = () => (
   <header className="header">
     <h1>Budget App</h1>

@@ -16,9 +16,11 @@ import {
 import { cl } from "./utils/DebugHelpers";
 /* ===== Styles and Components ===== */
 import "normalize.css/normalize.css";
+import "react-dates/lib/css/_datepicker.css";
+import "react-dates/initialize";
 import "./styles/styles.scss";
 
-/* ===== Code for the App ====== */
+/* ===== Code ====== */
 const store = configureStore();
 
 store.dispatch(
