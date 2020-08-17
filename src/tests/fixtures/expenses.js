@@ -4,7 +4,7 @@ export default [
     id: "1",
     description: "Ice cream",
     note: "",
-    amount: 253,
+    amount: 255,
     createdAt: 0,
   },
   {
