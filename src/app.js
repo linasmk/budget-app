@@ -21,6 +21,8 @@ import "react-dates/initialize";
 import "./styles/styles.scss";
 
 /* ===== Code ====== */
+console.log("testing build");
+
 const store = configureStore();
 
 const jsx = (
