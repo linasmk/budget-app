@@ -11,8 +11,10 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
-    "__comment-for-start-command__": "start is needed in order to deploy to Heroku. When it finds this script, it runs node server",
-    "start": "node server/server.js"
+    "_comment-for-start-command_": "start is needed in order to deploy to Heroku. When it finds this script, it runs node server",
+    "start": "node server/server.js",
+    "_comment-for-heroku-postbuild_": "heroku-postbuild is going to run after Heroku installs all of the depencencies",
+    "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
