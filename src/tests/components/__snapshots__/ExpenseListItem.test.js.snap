@@ -14,5 +14,6 @@ exports[`Should render ExpenseListItem correctly 1`] = `
     -
     January 1st, 1970. At: 1:00 AM
   </p>
+  <p />
 </section>
 `;
