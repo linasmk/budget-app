@@ -1,14 +1,20 @@
 /* ========= Dependencies ============= */
 import React from "react";
-import ExpensesSummary from "./ExpensesSummary";
+/* ========== Components ========== */
+
 import ExpenseList from "./ExpenseList";
 import ExpenseListFilters from "./ExpenseListFilters";
+import AddExpenseLink from "./AddExpenseLink";
+
+/* ========== Code ========== */
 
 const ExpenseDashboardPage = () => (
-  <div>
-    <ExpensesSummary />
-    <ExpenseListFilters />
-    <ExpenseList />
+  <div className="expense-dashboard">
+    <article className="expense-dashboard__content">
+      <ExpenseListFilters />
+      <AddExpenseLink />
+      <ExpenseList />
+    </article>
   </div>
 );
 

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AddExpenseButton correctly 1`] = `
+<nav
+  className="header__nav"
+>
+  <NavLink
+    activeClassName="is-active-navlink"
+    className="header__navlink"
+    to="/create"
+  >
+    <BsPlusSquare
+      className="header__navicon"
+    />
+  </NavLink>
+</nav>
+`;

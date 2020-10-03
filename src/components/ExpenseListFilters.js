@@ -1,3 +1,4 @@
+/* ========= Dependencies ============= */
 import React from "react";
 import { connect } from "react-redux";
 import { DateRangePicker } from "react-dates";
@@ -9,8 +10,8 @@ import {
   setStartDate,
   setEndDate,
 } from "../actions/filters";
-import { cl } from "../utils/DebugHelpers";
 
+/* ========== Code ========== */
 export class ExpenseListFilters extends React.Component {
   state = {
     calendarFocused: null,
@@ -37,16 +38,25 @@ export class ExpenseListFilters extends React.Component {
 
   render() {
     return (
-      <div>
-        <input
-          type="text"
-          value={this.props.filters.text}
-          onChange={this.onTextChange}
-        />
-        <select value={this.props.filters.sortBy} onChange={this.onSortChange}>
-          <option value="date">Date</option>
-          <option value="amount">Amount</option>
-        </select>
+      <div className="expense-filters">
+        <div className="expense-filters__input-wrapper">
+          <input
+            type="text"
+            value={this.props.filters.text}
+            onChange={this.onTextChange}
+            placeholder="Expense description"
+            className="expense-filters__input--text h-input-styles"
+          />
+          <select
+            value={this.props.filters.sortBy}
+            onChange={this.onSortChange}
+            className="expense-filters__input--select h-input-styles"
+          >
+            <option value="date">Date</option>
+            <option value="amount">Amount</option>
+          </select>
+        </div>
+
         <DateRangePicker
           startDate={this.props.filters.startDate}
           endDate={this.props.filters.endDate}
@@ -58,6 +68,7 @@ export class ExpenseListFilters extends React.Component {
           showClearDates={true}
           numberOfMonths={1}
           isOutsideRange={() => false}
+          daySize={33}
         />
       </div>
     );

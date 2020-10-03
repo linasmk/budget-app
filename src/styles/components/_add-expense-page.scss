@@ -1,18 +1,160 @@
 /* ============================================== 
 ============== ADD EXPENSE PAGE =================
 ============================================== */
-.expense__form-wrapper {
-  @include verticalFlex(center, center);
+.add-expense-page {
+	@include containerWidth_sm;
+	flex-grow: 2;
 }
+
+.add-expense__title {
+	font-size: pxToRem(28);
+	text-align: center;
+	margin: $l-box-size 0;
+	color: $lightBlue;
+}
+
+.form-wrapper {
+	width: 100%;
+	@include v-flex(center, center);
+}
+
 .expense__form-wrapper--warning {
-  color: $crimson;
+	color: $crimson;
 }
+
 .expense__form {
-  width: 50%;
-  @include verticalFlex(center, center);
+	width: 100%;
+	@include v-flex(center, center);
 }
-.expense__form input,
-.expense__form textarea {
-  width: 100%;
-  margin: $l-box-size 0;
+
+.expense-form__input-wrapper {
+	width: 100%;
+	@include v-flex(center, flex-start);
+	flex-wrap: nowrap;
+}
+
+.expense-form__input,
+.expense-form__textarea {
+	width: 100%;
+	margin: $m-box-size 0;
+	font-size: pxToRem(14);
+
+	&:focus {
+		outline: 2px solid $lightPurple;
+		outline-offset: -1px;
+	}
+}
+
+.add-expense-btn,
+.remove-expense-btn {
+	width: pxToRem(120);
+	height: pxToRem(36);
+	line-height: pxToRem(36);
+	background-color: $lightGreen;
+	margin: $m-box-size 0;
+	font-size: pxToRem(14);
+	color: $white;
+	border: none;
+	display: block;
+	text-align: center;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	transition: background-color, .5s ease-in;
+
+	&:hover {
+		background-color: lighten($lightGreen, 3%);
+	}
+}
+
+.add-expense-btn {
+	background-color: $lightGreen;
+}
+
+.remove-expense-btn {
+	background-color: red;
+}
+
+/* ==============================================
+================ Media Queries ===================
+================================================ */
+@media (min-width: pxToRem(768)) {
+	.add-expense__title {
+		font-size: pxToRem(30);
+		margin: pxToRem(28) 0;
+	}
+
+	.add-expense-page {
+		@include containerWidth_md;
+	}
+
+	.expense-form__input-wrapper {
+		@include h-flex(space-between, center);
+		flex-wrap: nowrap;
+	}
+
+	.expense-form__input {
+		width: 45%;
+		font-size: pxToRem(16);
+	}
+
+	.expense-form__textarea {
+		font-size: pxToRem(16);
+	}
+
+	.add-expense-btn,
+	.remove-expense-btn {
+		font-size: pxToRem(16);
+		width: pxToRem(125);
+	}
+}
+
+@media (min-width: pxToRem(1024)) {
+	.add-expense__title {
+		font-size: pxToRem(32);
+		margin: pxToRem(30) 0;
+	}
+
+	.add-expense-page {
+		@include containerWidth_lg;
+	}
+
+	.expense-form__input {
+		font-size: pxToRem(18);
+	}
+
+	.expense-form__textarea {
+		font-size: pxToRem(18);
+	}
+
+	.add-expense-btn,
+	.remove-expense-btn {
+		font-size: pxToRem(18);
+		width: pxToRem(130);
+	}
+}
+
+@media (min-width: pxToRem(1400)) {
+	.add-expense__title {
+		font-size: pxToRem(34);
+		margin: pxToRem(32) 0;
+	}
+
+	.add-expense-page {
+		@include containerWidth_xl_fixed;
+	}
+
+	.expense-form__input {
+		font-size: pxToRem(20);
+	}
+
+	.expense-form__textarea {
+		font-size: pxToRem(20);
+	}
+
+	.add-expense-btn,
+	.remove-expense-btn {
+		font-size: pxToRem(20);
+		width: pxToRem(135);
+	}
 }

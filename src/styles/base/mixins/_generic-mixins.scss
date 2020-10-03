@@ -14,7 +14,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-@mixin verticalFlex($position, $alignment) {
+@mixin v-flex($position, $alignment) {
   display: flex;
   flex-direction: column;
   //flex-wrap: wrap;
@@ -22,7 +22,7 @@
   align-items: $alignment;
 }
 
-@mixin horizontalFlex($position, $alignment) {
+@mixin h-flex($position, $alignment) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -49,21 +49,26 @@
 }
 
 @mixin containerWidth_sm {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 @mixin containerWidth_md {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@mixin containerWidth_lg {
   width: 70%;
   margin: 0 auto;
 }
 
-@mixin containerWidth_xl {
+@mixin containerWidth_lg {
   width: 60%;
+  margin: 0 auto;
+}
+
+@mixin containerWidth_xl {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@mixin containerWidth_xl_fixed {
+  width: pxToRem(800);
   margin: 0 auto;
 }

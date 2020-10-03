@@ -7,16 +7,20 @@ import numeral from "numeral";
 /* ========= Code ============= */
 
 const ExpenseListItem = ({ id, description, note, amount, createdAt }) => (
-  <section>
-    <h3>
-      <Link to={`/edit/${id}`}>{description}</Link>
+  <div className="expens-item">
+    <h3 className="expense-item__description">
+      <Link className="expens-item__link" to={`/edit/${id}`}>
+        {description}
+      </Link>
     </h3>
-    <p>
-      {"€" + numeral(amount / 100).format("0,0.00")}-
+    <p className="expense-item__date">
       {moment(createdAt).format("MMMM Do, YYYY. [At:] LT")}
     </p>
-    <p>{note}</p>
-  </section>
+    <p className="expense-item__amount">
+      {"€" + numeral(amount / 100).format("0,0.00")}
+    </p>
+    <p className="expense-item__note">{note}</p>
+  </div>
 );
 
 export default ExpenseListItem;

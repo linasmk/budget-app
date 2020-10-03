@@ -11,11 +11,17 @@ import selectExpensesTotal from "../selectors/expenses-total";
 export const ExpensesSummary = ({ expenseCount, expenseTotal }) => {
   const expenseCountSpelling = expenseCount === 1 ? "expense" : "expenses";
   return (
-    <div>
-      <p>
-        {expenseCount} {expenseCountSpelling} visible given by your search.
-      </p>
-      <p>Totalling {"€" + numeral(expenseTotal / 100).format("0,0.00")} .</p>
+    <div className="expense-summary">
+      <div className="expense-summary__tile">
+        <p className="expense-summary__description">Expenses visible:</p>
+        <p className="expense-summary__output">{expenseCount}</p>
+      </div>
+      <div className="expense-summary__tile">
+        <p className="expense-summary__description">Totalling to:</p>
+        <p className="expense-summary__output">
+          {"€" + numeral(expenseTotal / 100).format("0,0.00")}
+        </p>
+      </div>
     </div>
   );
 };

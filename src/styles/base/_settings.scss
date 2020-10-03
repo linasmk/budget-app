@@ -1,16 +1,16 @@
 @import "./functions";
 /* ============= Settings ============== */
-
 /* Variables */
 $white: #ffffff;
+$lightestSky: #E7EBE0FF;
 $black: #000;
-$veryLightBlue: #99ccff;
-
+$lightPurple: #D7A9E3FF;
+$lightBlue: #8BBEE8FF;
+$lightGreen: #A8D5BAFF;
 $crimson: #dc143c;
-
 /* Fonts */
-$nunito: "Nunito", sans-serif;
-
+$nunito: "Nunito",
+sans-serif;
 /* Box Sizes */
 $xs-box-size: pxToRem(5);
 $s-box-size: pxToRem(10);
@@ -18,7 +18,6 @@ $m-box-size: pxToRem(15);
 $l-box-size: pxToRem(25);
 $xl-box-size: pxToRem(40);
 $xxl-box-size: pxToRem(50);
-
 /* Text Sizes */
 $xs-text-size: pxToRem(14);
 $s-text-size: pxToRem(16);
@@ -26,3 +25,5 @@ $m-text-size: pxToRem(20);
 $l-text-size: pxToRem(28);
 $xl-text-size: pxToRem(35);
 $xxl-text-size: pxToRem(45);
+/* Miscellaneous */
+$b-radius: pxToRem(25);

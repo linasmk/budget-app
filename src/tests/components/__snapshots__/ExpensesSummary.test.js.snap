@@ -1,33 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders ExpenseSummary correctly with 1 expense 1`] = `
-<div>
-  <p>
-    1
-     
-    expense
-     visible given by your search.
-  </p>
-  <p>
-    Totalling 
-    €3.00
-     .
-  </p>
+<div
+  className="expense-summary"
+>
+  <div
+    className="expense-summary__tile"
+  >
+    <p
+      className="expense-summary__description"
+    >
+      Expenses visible:
+    </p>
+    <p
+      className="expense-summary__output"
+    >
+      1
+    </p>
+  </div>
+  <div
+    className="expense-summary__tile"
+  >
+    <p
+      className="expense-summary__description"
+    >
+      Totalling to:
+    </p>
+    <p
+      className="expense-summary__output"
+    >
+      €3.00
+    </p>
+  </div>
 </div>
 `;
 
 exports[`renders ExpenseSummary correctly with multiple expenses 1`] = `
-<div>
-  <p>
-    5
-     
-    expenses
-     visible given by your search.
-  </p>
-  <p>
-    Totalling 
-    €8.00
-     .
-  </p>
+<div
+  className="expense-summary"
+>
+  <div
+    className="expense-summary__tile"
+  >
+    <p
+      className="expense-summary__description"
+    >
+      Expenses visible:
+    </p>
+    <p
+      className="expense-summary__output"
+    >
+      5
+    </p>
+  </div>
+  <div
+    className="expense-summary__tile"
+  >
+    <p
+      className="expense-summary__description"
+    >
+      Totalling to:
+    </p>
+    <p
+      className="expense-summary__output"
+    >
+      €8.00
+    </p>
+  </div>
 </div>
 `;

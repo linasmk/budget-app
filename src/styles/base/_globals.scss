@@ -65,9 +65,16 @@ p {
   }
 }
 
+@media screen and (min-width: pxToRem(768)) {
+  p {
+    font-size: $s-text-size;
+    margin: pxToRem(12) 0;
+  }
+}
+
 @media screen and (min-width: pxToRem(1024)) {
   h1 {
-    margin: pxToRem(20) 0;
+    margin: pxToRem(35) 0;
   }
 
   h2 {

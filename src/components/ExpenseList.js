@@ -8,15 +8,21 @@ import ExpenseListItem from "./ExpenseListItem";
 /* ========== Code ========== */
 
 export const ExpenseList = (props) => (
-  <div>
+  <section className="expense-list">
+    <div className="expense-list__topbar">
+      <p className="topbar__item-name">Expense</p>
+      <p className="topbar__item-name">Amount</p>
+    </div>
     {props.expenses.length === 0 ? (
-      <h3>You currently have no expenses!</h3>
+      <h3 className="expense-list__no-expenses">
+        You currently have no expenses!
+      </h3>
     ) : (
       props.expenses.map((expense) => {
         return <ExpenseListItem key={expense.id} {...expense} />;
       })
     )}
-  </div>
+  </section>
 );
 
 const mapStateToProps = (state) => {

@@ -2,7 +2,6 @@
 import React from "react";
 import { shallow } from "enzyme";
 /* ========== Components ========== */
-import expenses from "../fixtures/expenses";
 import { ExpensesSummary } from "../../components/ExpensesSummary";
 
 it("renders ExpenseSummary correctly with 1 expense", () => {

@@ -1,20 +1,20 @@
 /* ===== App Dependencies ===== */
 import React from "react";
 import { NavLink } from "react-router-dom";
+/* ========== Components ========== */
+import ExpensesSummary from "./ExpensesSummary";
 
 /* ========== Code ========== */
 const Header = () => (
   <header className="header">
-    <h1>Budget App</h1>
-    <NavLink to="/" activeClassName="is-active" exact={true}>
-      Dashboard
-    </NavLink>
-    <NavLink to="/create" activeClassName="is-active">
-      Add Expense
-    </NavLink>
-    <NavLink to="/help" activeClassName="is-active">
-      Help
-    </NavLink>
+    <section className="header__content">
+      <h1 className="header__title">
+        <NavLink className="header__title" to="/" exact={true}>
+          budgedo
+        </NavLink>
+      </h1>
+      <ExpensesSummary />
+    </section>
   </header>
 );
 export default Header;
