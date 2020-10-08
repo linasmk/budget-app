@@ -1,10 +1,16 @@
 /* ====================================
 ================= Header ==============
 ======================================= */
+html {
+	font-family: 'Roboto Mono',
+		monospace;
+	font-family: 'Lobster', cursive;
+}
+
 .header {
 	width: 100%;
 	height: 100%;
-	background-color: $lightBlue;
+	background: linear-gradient(0.25turn, $third-fg-color, 15%, $primary-fg-color, 85%, $third-fg-color);
 }
 
 .header__content {
@@ -13,17 +19,20 @@
 }
 
 .header__title {
+	letter-spacing: 4px;
+	font-weight: 300;
 	font-size: pxToRem(60);
-	color: $white;
+	color: $title-color;
 	text-decoration: none;
+	font-family: $title-font;
 
 	a:-webkit-any-link {
-		color: $white;
+		color: $title-color;
 		text-decoration: none;
 	}
 
 	.active {
-		color: $white;
+		color: $title-color;
 		text-decoration: none;
 	}
 }

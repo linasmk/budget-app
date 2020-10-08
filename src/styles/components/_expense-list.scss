@@ -12,20 +12,20 @@
 	width: 100%;
 	height: pxToRem(40);
 	margin: $m-box-size 0 0 0;
-	background-color: $lightPurple;
-	border: 1px solid $white;
+	background: linear-gradient(0.25turn, $third-fg-color, 15%, $primary-fg-color, 85%, $third-fg-color);
+	border: 1px solid $btn-txt-color;
 	@include h-flex(space-between, center);
 	align-content: center;
 }
 
 .topbar__item-name {
 	font-size: pxToRem(14);
-	color: $white;
+	color: $btn-txt-color;
 	padding: 0 $s-box-size;
 }
 
 .expense-list__no-expenses {
-	color: $lightBlue;
+	color: $heading-txt-color;
 	margin: $l-box-size 0;
 	font-size: pxToRem(20);
 	text-align: center;

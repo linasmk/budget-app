@@ -18,7 +18,7 @@
 	font-size: pxToRem(14);
 
 	&:focus {
-		outline: 2px solid $lightPurple;
+		outline: 2px solid $secondary-fg-color;
 		outline-offset: -1px;
 	}
 }
@@ -29,7 +29,7 @@
 	margin: $m-box-size 0;
 
 	&:focus {
-		outline: 2px solid $lightPurple;
+		outline: 2px solid $secondary-fg-color;
 		outline-offset: -1px;
 	}
 }
@@ -45,30 +45,36 @@
 
 	.expense-filters__input--text {
 		width: 60%;
+		margin: $l-box-size 0;
 	}
 
 	.expense-filters__input--select {
 		width: 35%;
+		margin: $l-box-size 0;
 	}
 }
 
 @media (min-width: pxToRem(768)) {
 	.expense-filters__input--text {
 		font-size: pxToRem(16);
+		margin: $xl-box-size 0;
 	}
 
 	.expense-filters__input--select {
 		font-size: pxToRem(16);
+		margin: $xl-box-size 0;
 	}
 }
 
 @media (min-width: pxToRem(1024)) {
 	.expense-filters__input--text {
 		font-size: pxToRem(18);
+		margin: $xxl-box-size 0;
 	}
 
 	.expense-filters__input--select {
 		font-size: pxToRem(18);
+		margin: $xxl-box-size 0;
 	}
 }
 

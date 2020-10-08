@@ -8,7 +8,7 @@
 	padding: pxToRem(10);
 	grid-template-rows: auto auto auto;
 	grid-template-columns: 1fr 1fr;
-	border: 1px solid $white;
+	border: 1px solid $btn-txt-color;
 }
 
 .expense-item__description {
@@ -17,17 +17,23 @@
 }
 
 .expens-item__link {
-	color: $lightBlue;
+	color: $heading-txt-color;
 	text-decoration: none;
+	cursor: pointer;
+	transition: color .4s ease-in;
 
 	a:-webkit-any-link {
-		color: $lightBlue;
+		color: $heading-txt-color;
 		text-decoration: none;
 	}
 
 	.active {
-		color: $lightBlue;
+		color: $heading-txt-color;
 		text-decoration: none;
+	}
+
+	&:hover {
+		color: $secondary-fg-color;
 	}
 }
 

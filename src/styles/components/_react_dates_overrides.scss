@@ -33,7 +33,7 @@
 }
 
 .DateInput_input__focused {
-	border-bottom: 2px solid $lightGreen;
+	border-bottom: 2px solid $third-fg-color;
 }
 
 .DateRangePickerInput_clearDates {
@@ -77,46 +77,46 @@
 /* ============ Calendar Days ============ */
 .CalendarDay__default {
 	&:hover {
-		background: lighten($lightPurple, 15%);
+		background: lighten($secondary-fg-color, 15%);
 	}
 
 	&:focus {
-		outline: 1px solid $lightBlue;
-		background: $lightBlue;
+		outline: 1px solid $primary-fg-color;
+		background: $primary-fg-color;
 	}
 }
 
 .CalendarDay__selected {
-	background: $lightGreen;
-	border: 1px solid $lightGreen;
+	background: $third-fg-color;
+	border: 1px solid $third-fg-color;
 
 	&:hover,
 	&:active {
-		background: lighten($lightGreen, 10%);
-		border: 1px solid $lightGreen;
+		background: lighten($third-fg-color, 10%);
+		border: 1px solid $third-fg-color;
 	}
 }
 
 .CalendarDay__selected_span {
-	background: lighten($lightGreen, 10%);
-	border: 1px solid $lightGreen;
+	background: lighten($third-fg-color, 10%);
+	border: 1px solid $third-fg-color;
 	color: $black;
 
 	&:hover,
 	&:active {
-		background: lighten($lightGreen, 15%);
-		border: 1px solid $lightGreen;
+		background: lighten($third-fg-color, 15%);
+		border: 1px solid $third-fg-color;
 		color: $black;
 	}
 }
 
 .CalendarDay__hovered_span {
-	background: lighten($lightGreen, 30%);
-	border: 1px solid $lightGreen;
+	background: lighten($third-fg-color, 30%);
+	border: 1px solid $third-fg-color;
 
 	&:hover {
-		background: $lightGreen;
-		border: 1px solid $lightGreen;
+		background: $third-fg-color;
+		border: 1px solid $third-fg-color;
 	}
 }
 
@@ -128,23 +128,23 @@
 }
 
 .DayPickerKeyboardShortcuts_show__bottomRight:hover::before {
-	border-right: 33px solid $lightPurple;
+	border-right: 33px solid $secondary-fg-color;
 }
 
 .DayPickerKeyboardShortcuts_show__bottomRight::before {
-	border-right: 33px solid $lightGreen;
+	border-right: 33px solid $third-fg-color;
 }
 
 /* ====== Single Date Picker: Input in AppointmentsItem ===== */
 .appointment-item__date .SingleDatePicker {
 	width: pxToRem(200);
-	border: 1px solid $lightBlue;
+	border: 1px solid $primary-fg-color;
 	margin: pxToRem(12) 0;
 	transition: all .3s ease-in;
 
 	&:focus-within {
 		background-color: transparent;
-		border: 1px solid $lightGreen;
+		border: 1px solid $third-fg-color;
 		outline: none;
 	}
 }
@@ -154,10 +154,10 @@
 }
 
 .appointment-item__date .DateInput_input {
-	color: $lightBlue;
+	color: $primary-fg-color;
 	padding: 0;
 	border: none;
-	background-color: lighten($lightBlue, 5%);
+	background-color: lighten($primary-fg-color, 5%);
 	transition: all .3s ease-in;
 
 	&:focus-within {
@@ -184,13 +184,39 @@
 	}
 }
 
+@media (min-width: pxToRem(480)) {
+	.DateRangePicker {
+		margin: $l-box-size 0;
+	}
+
+	.SingleDatePicker {
+		margin: $l-box-size 0;
+	}
+}
+
 @media (min-width: pxToRem(768)) {
+	.DateRangePicker {
+		margin: $xl-box-size 0;
+	}
+
+	.SingleDatePicker {
+		margin: $xl-box-size 0;
+	}
+
 	.DateInput_input {
 		font-size: pxToRem(16);
 	}
 }
 
 @media (min-width: pxToRem(1024)) {
+	.DateRangePicker {
+		margin: $xxl-box-size 0;
+	}
+
+	.SingleDatePicker {
+		margin: $xxl-box-size 0;
+	}
+
 	.DateInput_input {
 		font-size: pxToRem(18);
 	}

@@ -1,0 +1,40 @@
+/* ============================================== 
+============== EDIT EXPENSE PAGE =================
+============================================== */
+.edit-expense-page {
+	width: 100%;
+	height: auto;
+	flex-grow: 4;
+	@include containerWidth_sm;
+}
+
+.remove-btn-wrapper {
+	@include h-flex(flex-start, center);
+	width: 100%;
+	height: 100%;
+}
+
+.remove-expense-btn {
+	background-color: $btn-bg-color;
+}
+
+/* ==============================================
+================ Media Queries ===================
+================================================ */
+@media (min-width: pxToRem(768)) {
+	.edit-expense-page {
+		@include containerWidth_md;
+	}
+}
+
+@media (min-width: pxToRem(1024)) {
+	.edit-expense-page {
+		@include containerWidth_lg;
+	}
+}
+
+@media (min-width: pxToRem(1400)) {
+	.edit-expense-page {
+		@include containerWidth_xl_fixed;
+	}
+}

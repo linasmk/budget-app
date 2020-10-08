@@ -1,16 +1,40 @@
 @import "./functions";
 /* ============= Settings ============== */
-/* Variables */
+/* Colors */
 $white: #ffffff;
-$lightestSky: #E7EBE0FF;
+$lightestSky: rgba(215, 219, 226, .91);
 $black: #000;
 $lightPurple: #D7A9E3FF;
 $lightBlue: #8BBEE8FF;
 $lightGreen: #A8D5BAFF;
 $crimson: #dc143c;
-/* Fonts */
-$nunito: "Nunito",
+$darkBlue: rgb(37, 37, 67);
+$weirdGray: #6f92af;
+$magento: #946993;
+/* ===== Background and Foreground Colors =====   */
+$primary-bg-color: $lightestSky;
+$primary-fg-color: $darkBlue;
+$secondary-fg-color: $weirdGray;
+$third-fg-color: $magento;
+$btn-bg-color: $lightGreen;
+/* ===== Text Colors ===== */
+$heading-txt-color: $magento;
+$p-txt-color: $black;
+$title-color: $white;
+$input-txt-color: $black;
+$summary-txt-color: $weirdGray;
+$btn-txt-color: $white;
+/* ===== Fonts ===== */
+$acme: 'Acme',
 sans-serif;
+$curier-prime: 'Courier Prime',
+monospace;
+$poppins: 'Poppins',
+sans-serif;
+$title-font: $acme;
+$headings-font: $poppins;
+$form-font: $curier-prime;
+$regular-font: $curier-prime;
 /* Box Sizes */
 $xs-box-size: pxToRem(5);
 $s-box-size: pxToRem(10);

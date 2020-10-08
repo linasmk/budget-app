@@ -1,6 +1,7 @@
 /* ============ Globals ============ */
 @import "./settings";
 @import "./functions";
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Courier+Prime&family=Poppins:wght@500&display=swap');
 
 html {
   font-size: 100%;
@@ -21,6 +22,29 @@ body {
 h1 {
   font-size: pxToRem(48);
   margin: $m-box-size 0;
+  font-family: $title-font;
+}
+
+h2,
+h3,
+h4 {
+  font-family: $headings-font;
+  letter-spacing: pxToRem(3);
+  font-weight: 300;
+}
+
+p,
+button,
+span,
+a {
+  font-family: $regular-font;
+}
+
+input,
+select,
+option,
+textarea {
+  font-family: $form-font;
 }
 
 h2 {
