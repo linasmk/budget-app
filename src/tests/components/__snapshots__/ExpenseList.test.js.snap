@@ -1,15 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ExpenseList with empty message 1`] = `
-<div>
-  <h3>
+<section
+  className="expense-list"
+>
+  <div
+    className="expense-list__topbar"
+  >
+    <p
+      className="topbar__item-name"
+    >
+      Expense
+    </p>
+    <p
+      className="topbar__item-name"
+    >
+      Amount
+    </p>
+  </div>
+  <h3
+    className="expense-list__no-expenses"
+  >
     You currently have no expenses!
   </h3>
-</div>
+</section>
 `;
 
 exports[`Should render expense list with expenses 1`] = `
-<div>
+<section
+  className="expense-list"
+>
+  <div
+    className="expense-list__topbar"
+  >
+    <p
+      className="topbar__item-name"
+    >
+      Expense
+    </p>
+    <p
+      className="topbar__item-name"
+    >
+      Amount
+    </p>
+  </div>
   <ExpenseListItem
     amount={2555}
     createdAt={0}
@@ -34,5 +68,5 @@ exports[`Should render expense list with expenses 1`] = `
     key="3"
     note=""
   />
-</div>
+</section>
 `;

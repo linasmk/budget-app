@@ -2,9 +2,9 @@
 import React from "react";
 import { shallow } from "enzyme";
 /* ========== Components ========== */
-import { AddExpenseButton } from "../../components/AddExpenseLink";
+import { AddExpenseLink } from "../../components/AddExpenseLink";
 /* ========== Code ========== */
-it("renders AddExpenseButton correctly", () => {
-  const wrapper = shallow(<AddExpenseButton />);
+it("renders AddExpenseLink correctly", () => {
+  const wrapper = shallow(<AddExpenseLink />);
   expect(wrapper).toMatchSnapshot();
 });

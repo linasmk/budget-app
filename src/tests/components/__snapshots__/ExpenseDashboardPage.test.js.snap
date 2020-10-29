@@ -8,8 +8,8 @@ exports[`Should ExpenseDashBoardPage render corectly 1`] = `
     className="expense-dashboard__content"
   >
     <Connect(ExpenseListFilters) />
+    <AddExpenseLink />
     <Connect(ExpenseList) />
-    <AddExpenseButton />
   </article>
 </div>
 `;
